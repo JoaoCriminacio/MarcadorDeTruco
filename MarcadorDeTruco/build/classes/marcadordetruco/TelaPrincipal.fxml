@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="625.0" prefWidth="358.0" style="-fx-background-color: #2e302e;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="marcadordetruco.TelaPrincipalController">
+   <children>
+      <ImageView fitHeight="234.0" fitWidth="238.0" layoutX="67.0" layoutY="391.0" opacity="0.67" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Coringa.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="107.0" layoutY="125.0" opacity="0.67" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Hahaha-transformed.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSeisEquipe1" layoutX="50.0" layoutY="392.0" mnemonicParsing="false" onAction="#seisEquipe1Action" prefHeight="57.0" prefWidth="57.0" style="-fx-background-radius: 70;" text="6">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Label fx:id="placarEquipe1" alignment="CENTER" layoutX="47.0" layoutY="125.0" prefHeight="117.0" prefWidth="76.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnTrucoEquipe1" layoutX="49.0" layoutY="329.0" mnemonicParsing="false" onAction="#trucoEquipe1Action" prefHeight="57.0" prefWidth="57.0" style="-fx-background-radius: 70;" text="3">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMenosEquipe1" layoutX="16.0" layoutY="267.0" mnemonicParsing="false" onAction="#menosEquipe1Action" prefHeight="57.0" prefWidth="57.0" style="-fx-background-radius: 70;" text="-">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMaisEquipe1" layoutX="85.0" layoutY="267.0" mnemonicParsing="false" onAction="#maisEquipe1Action" prefHeight="57.0" prefWidth="57.0" style="-fx-background-radius: 70;" text="+">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNoveEquipe1" layoutX="50.0" layoutY="456.0" mnemonicParsing="false" onAction="#noveEquipe1Action" prefHeight="57.0" prefWidth="57.0" style="-fx-background-radius: 70;" text="9">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Button>
+      <Button fx:id="btnDozeEquipe1" layoutX="50.0" layoutY="520.0" mnemonicParsing="false" onAction="#dozeEquipe1Action" prefHeight="57.0" prefWidth="57.0" style="-fx-background-radius: 70;" text="12">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDozeEquipe2" layoutX="246.0" layoutY="519.0" mnemonicParsing="false" onAction="#dozeEquipe2Action" prefHeight="57.0" prefWidth="57.0" style="-fx-background-radius: 70;" text="12">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNoveEquipe2" layoutX="246.0" layoutY="455.0" mnemonicParsing="false" onAction="#noveEquipe2Action" prefHeight="57.0" prefWidth="57.0" style="-fx-background-radius: 70;" text="9">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMaisEquipe2" layoutX="281.0" layoutY="266.0" mnemonicParsing="false" onAction="#maisEquipe2Action" prefHeight="57.0" prefWidth="57.0" style="-fx-background-radius: 70;" text="+">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMenosEquipe2" layoutX="212.0" layoutY="266.0" mnemonicParsing="false" onAction="#menosEquipe2Action" prefHeight="57.0" prefWidth="57.0" style="-fx-background-radius: 70;" text="-">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnTrucoEquipe2" layoutX="245.0" layoutY="328.0" mnemonicParsing="false" onAction="#trucoEquipe2Action" prefHeight="57.0" prefWidth="57.0" style="-fx-background-radius: 70;" text="3">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSeisEquipe2" layoutX="246.0" layoutY="391.0" mnemonicParsing="false" onAction="#seisEquipe2Action" prefHeight="57.0" prefWidth="57.0" style="-fx-background-radius: 70;" text="6">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtEquipe1" alignment="CENTER" layoutX="24.0" layoutY="83.0" prefHeight="31.0" prefWidth="110.0" style="-fx-text-fill: white; -fx-background-color: #2e302e; -fx-border-radius: 30; -fx-border-color: white;" />
+      <TextField fx:id="txtEquipe2" alignment="CENTER" layoutX="220.0" layoutY="83.0" prefHeight="31.0" prefWidth="110.0" style="-fx-text-fill: white; -fx-background-color: #2e302e; -fx-border-radius: 30; -fx-border-color: white;" />
+      <Label fx:id="vitoriasEquipe1" alignment="CENTER" layoutX="67.0" layoutY="35.0" prefHeight="21.0" prefWidth="25.0" text="0" textFill="#03ff46">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="vitoriasEquipe2" alignment="CENTER" layoutX="270.0" layoutY="35.0" style="-fx-font: ;" text="0" textFill="#03ff46">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="placarEquipe2" alignment="CENTER" layoutX="237.0" layoutY="125.0" prefHeight="117.0" prefWidth="76.0" text="0" textFill="#f8f8f8">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="132.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vitórias">
+         <font>
+            <Font size="28.0" />
+         </font></Text>
+   </children>
+</AnchorPane>
